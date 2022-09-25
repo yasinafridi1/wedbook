@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.loginSection {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.loginSection .wrapper {
+    width: 60%;
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 15px 0px #c1c1c1;
+    align-items: center;
+    background: rgb(239, 239, 239);
+
+}
+
+.loginSection .wrapper .triangle {
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to bottom right, rgb(218, 133, 48) 50%, rgb(239, 239, 239) 50%);
+}
+
+.loginSection .wrapper form {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 3px;
+}
+
+.loginSection .wrapper form h1 {
+    margin-top: 10px;
+    font-size: 36px;
+}
+
+.loginSection .wrapper form .inputs {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loginSection .wrapper form .inputs input {
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 20px;
+    width: 90%;
+    padding: 4px 12px;
+}
+
+.loginSection .wrapper button {
+    padding: 3px 16px;
+    font-size: 19px;
+    border: 1px solid blue;
+    color: blue;
+    transition: 1s ease-out;
+}
+
+.loginSection .wrapper button:hover {
+    color: white;
+    background: blue;
+}
