@@ -2,6 +2,15 @@ import React from 'react';
 // import { Link } from 'react-router-dom';
 
 const Navbar = () => {
+    window.addEventListener('scroll', () => {
+        const nav = document.querySelector('.nav');
+        if (window.scrollY > 100) {
+            nav.classList.add('animateMenu');
+        } else {
+            nav.classList.remove('animateMenu');
+        }
+    })
+
     return (
         <nav className='nav fixed top-0 w-full flex justify-center items-center flex-col' >
             <div className='w-full flex justify-between items-center py-1'>
