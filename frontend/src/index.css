@@ -2,113 +2,109 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
 
 * {
-    /* font-family: 'Roboto', sans-serif; */
-    scroll-behavior: smooth;
+  /* font-family: 'Roboto', sans-serif; */
+  scroll-behavior: smooth;
 }
 
 html {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .header-text {
-    font-family: 'Secular One', sans-serif;
+  font-family: "Secular One", sans-serif;
 }
 
 .nav {
-    transition: all .3s ease-in-out;
-    color: rgb(222, 222, 222);
-    top: 0;
-    z-index: 99;
+  transition: all 0.3s ease-in-out;
+  color: rgb(222, 222, 222);
+  top: 0;
+  z-index: 99;
 }
 
 input#openSidebarMenu {
-    display: none;
+  display: none;
 }
 
 .sidebarIconToggle {
-    cursor: pointer;
-    margin-right: 10px;
+  cursor: pointer;
+  margin-right: 10px;
 }
 
 .menu-responsive {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-bottom: 15px;
-    transition: all 2s ease-in-out;
-    animation: slideMenu .500s linear;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    background: rgb(200, 81, 81);
-
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 15px;
+  transition: all 2s ease-in-out;
+  animation: slideMenu 0.5s linear;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  background: rgb(200, 81, 81);
 }
 
 .d-none {
-    display: none;
+  display: none;
 }
-
 
 .spinner {
-    height: 3px;
-    width: 23px;
-    background: #db2777;
-    transition: all .7s;
+  height: 3px;
+  width: 23px;
+  background: #db2777;
+  transition: all 0.7s;
 }
 
-#openSidebarMenu:checked~.sidebarIconToggle>.spinner.middle {
-    opacity: 0;
+#openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.middle {
+  opacity: 0;
 }
 
-#openSidebarMenu:checked~.sidebarIconToggle>.spinner.top {
-    transform: rotate(140deg) translate(-15%, 100%);
-    margin-top: 9px;
+#openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.top {
+  transform: rotate(140deg) translate(-15%, 100%);
+  margin-top: 9px;
 }
 
-#openSidebarMenu:checked~.sidebarIconToggle>.spinner.bottom {
-    transform: rotate(-140deg) translate(11%, 150%);
-    margin-top: -8px;
+#openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.bottom {
+  transform: rotate(-140deg) translate(11%, 150%);
+  margin-top: -8px;
 }
 
 .spinner.middle,
 .spinner.bottom {
-    margin-top: 3px;
+  margin-top: 3px;
 }
-
 
 .animateMenu {
-    animation: animatemenu 0.8s linear;
-    background-color: rgb(21 57 78);
-    color: rgb(222, 222, 222);
+  animation: animatemenu 0.8s linear;
+  background-color: rgb(21 57 78);
+  color: rgb(222, 222, 222);
 }
 
-
 @keyframes animatemenu {
-    0% {
-        top: -10%;
-        opacity: 0;
-    }
+  0% {
+    top: -10%;
+    opacity: 0;
+  }
 
-    50% {
-        top: -5%;
-        opacity: 0.5;
-    }
+  50% {
+    top: -5%;
+    opacity: 0.5;
+  }
 
-    100% {
-        opacity: 1;
-        top: 0;
-    }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
 }
 
 /* 
@@ -137,7 +133,6 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 */
-
 
 /*
 
@@ -170,10 +165,6 @@ input[type=number]::-webkit-outer-spin-button {
     background-color: #e8e8e8;
 }
 
-#about,
-#contact {
-    height: 640px;
-}
 
 .border-top {
     box-shadow: 0px -1px 4px 0px #f1eeee;

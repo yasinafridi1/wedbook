@@ -3,7 +3,7 @@ import Index from "./Components/home/Index";
 
 function App() {
   return (
-    <div className="bg-gray-600">
+    <div>
       <Index />
     </div>
   );
