@@ -12,46 +12,60 @@ const Navbar = () => {
   });
 
   return (
-    <nav className="nav fixed top-0 w-full flex justify-center items-center flex-col">
-      <div className="w-full flex justify-between items-center py-1">
-        <div className="flex justify-between items-center w-1/3 ml-10 flex-col md:flex-row">
-          <a
-            href="tel:+923045760623"
-            className="mt-3 flex justify-start items-center transition-all ease-in-out duration-500 hover:text-pink-600"
-          >
-            <i className="fa-solid fa-phone text-xs xsm:text-base md:text-lg font-bold"></i>
-            <p className="pl-2 text-xs xsm:text-sm md:text-md lg:text-lg font-semibold">
-              +923045760623
-            </p>
-          </a>
-          <a
-            href="https://wa.me/+923045760623"
-            className="mt-3 flex justify-start items-center transition-all ease-in-out duration-500 hover:text-pink-600"
-          >
-            <i className="fa-brands fa-whatsapp text-xs xsm:text-base md:text-lg font-bold"></i>
-            <p className="pl-2 text-xs xsm:text-sm md:text-md lg:text-lg font-semibold">
-              +923045760623
-            </p>
-          </a>
-        </div>
-        <div className="pr-2 xsm:pr-10">
-          <div>
-            <a href="https://www.facebook.com" className="pr-2">
-              {" "}
-              <i className="fa-brands fa-square-facebook text-2xl transition-all ease-in-out duration-300 hover:text-blue-600"></i>
-            </a>
-            <a href="https://www.instagram.com" className="px-2">
-              <i className="fa-brands fa-square-instagram text-2xl transition-all ease-in-out duration-300 hover:text-pink-700"></i>
-            </a>
-            <a href="https://www.twitter.com" className="px-2">
-              {" "}
-              <i className="fa-brands fa-square-twitter text-2xl transition-all ease-in-out duration-300 hover:text-blue-400"></i>
-            </a>
-          </div>
-        </div>
-      </div>
+    <nav className="nav fixed py-2 px-10 w-full flex justify-center items-center flex-col">
       <div className="w-full py-1 flex justify-between items-center">
-        <div className="flex flex-between pl-2 sm:pl-3 items-center w-2/3 sm:w-1/3">
+        <div className="text-3xl font-bold text-secular text-primary">
+          WedBook
+        </div>
+        <ul className="text-menu flex justify-between items-center">
+          <li>
+            <a
+              href="/"
+              className="pl-12 xl:text-xl lg:text-lg md:text-base sm:text-xs sm:font-bold hover:text-pink-900 transition ease-in-out duration-500"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="/"
+              className="pl-12 xl:text-xl lg:text-lg md:text-base sm:text-xs sm:font-bold hover:text-pink-900 transition ease-in-out duration-500"
+            >
+              Services
+            </a>
+          </li>
+          <li>
+            <a
+              href="/"
+              className="pl-12 xl:text-xl lg:text-lg md:text-base sm:text-xs sm:font-bold hover:text-pink-900 transition ease-in-out duration-500"
+            >
+              About
+            </a>
+          </li>
+          <li>
+            <a
+              href="/"
+              className="pl-12 xl:text-xl lg:text-lg md:text-base sm:text-xs sm:font-bold hover:text-pink-900 transition ease-in-out duration-500"
+            >
+              Contact
+            </a>
+          </li>
+        </ul>
+        <div>
+          <a
+            href="/signin"
+            className="text-primary text-md px-2 font-bold hover:text-gray-600 transition ease-in-out duration-500"
+          >
+            Sign in
+          </a>
+          <a
+            href="/signup"
+            className="bg-primary py-1 px-2 text-white text-md font-bold hover:text-gray-600 transition ease-in-out duration-500"
+          >
+            Sign up
+          </a>
+        </div>
+        {/* <div className="flex flex-between pl-2 sm:pl-3 items-center w-2/3 sm:w-1/3">
           <div className="flex w-1/2 xsm:pl-4">
             <h2 className="text-xl pt-1 xsm:text-3xl font-bold text-yellow-300 header-text">
               WedBook
@@ -82,18 +96,31 @@ const Navbar = () => {
               className="xl:text-xl lg:text-lg md:text-base sm:pl-5 sm:text-xs sm:font-bold hover:text-pink-600 transition ease-in-out duration-500"
             >
               About
-            </a>{" "}
+            </a>
           </li>
           <li>
-            {" "}
             <a
               href="#contact"
               className="xl:text-xl lg:text-lg md:text-base sm:pl-5 sm:text-xs sm:font-bold hover:text-pink-600 transition ease-in-out duration-500 mr-2 lg:mr-0"
             >
               Contact
-            </a>{" "}
+            </a>
           </li>
         </ul>
+        <div className="pr-12">
+          <a
+            href="/signin"
+            className="xl:text-xl lg:text-lg md:text-base sm:pl-5 sm:text-xs sm:font-bold hover:text-pink-600 transition ease-in-out duration-500 mr-2 lg:mr-0"
+          >
+            Sign in
+          </a>
+          <a
+            href="/signup"
+            className="xl:text-xl lg:text-lg md:text-base sm:pl-5 sm:text-xs sm:font-bold hover:text-pink-600 transition ease-in-out duration-500 mr-2 lg:mr-0"
+          >
+            Sign up
+          </a>
+        </div> */}
         <input type="checkbox" id="openSidebarMenu" />
         <label
           htmlFor="openSidebarMenu"

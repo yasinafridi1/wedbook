@@ -1,0 +1,35 @@
+.section {
+  width: 500px;
+}
+
+.image {
+  border-top-left-radius: 40%;
+  border-bottom-left-radius: 40%;
+  width: 45%;
+}
+
+.text {
+  width: 55%;
+}
+
+.Rimage {
+  border-top-right-radius: 40%;
+  border-bottom-right-radius: 40%;
+  width: 45%;
+}
+
+.bg-venues {
+  background: #caa99ba4;
+}
+
+.bg-decoration {
+  background: #aeb3d89e;
+}
+
+.bg-cook {
+  background: #d0c8a994;
+}
+
+.bg-catering {
+  background: #bce4f19c;
+}

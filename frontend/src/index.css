@@ -1,32 +1,64 @@
 @tailwind base;
 @tailwind components;
+
+
+.text-primary {
+  @apply text-teal-500;
+}
+
+.bg-primary {
+  @apply bg-teal-500;
+}
+
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
 
 * {
   /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Ubuntu', sans-serif;
   scroll-behavior: smooth;
+}
+
+:root {
+  --bg-color: #E9EFF4;
+  --text-secondary: #707070;
+  --color-pink: #db2777;
+}
+
+.text-menu {
+  color: var(--text-secondary);
 }
 
 html {
   overflow-x: hidden;
+
+}
+
+body {
+  background-color: var(--bg-color);
 }
 
 a {
   text-decoration: none;
 }
 
-.header-text {
+.text-secular {
   font-family: "Secular One", sans-serif;
+}
+
+.text-alkalami {
+  font-family: 'Alkalami', serif;
 }
 
 .nav {
   transition: all 0.3s ease-in-out;
-  color: rgb(222, 222, 222);
   top: 0;
   z-index: 99;
+  background: var(--bg-color);
 }
 
 input#openSidebarMenu {
@@ -52,6 +84,7 @@ input#openSidebarMenu {
   left: 50%;
   transform: translate(-50%, 0%);
   background: rgb(200, 81, 81);
+  z-index: 8;
 }
 
 .d-none {
@@ -61,20 +94,20 @@ input#openSidebarMenu {
 .spinner {
   height: 3px;
   width: 23px;
-  background: #db2777;
+  background: var(--color-pink);
   transition: all 0.7s;
 }
 
-#openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.middle {
+#openSidebarMenu:checked~.sidebarIconToggle>.spinner.middle {
   opacity: 0;
 }
 
-#openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.top {
+#openSidebarMenu:checked~.sidebarIconToggle>.spinner.top {
   transform: rotate(140deg) translate(-15%, 100%);
   margin-top: 9px;
 }
 
-#openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.bottom {
+#openSidebarMenu:checked~.sidebarIconToggle>.spinner.bottom {
   transform: rotate(-140deg) translate(11%, 150%);
   margin-top: -8px;
 }
@@ -86,8 +119,6 @@ input#openSidebarMenu {
 
 .animateMenu {
   animation: animatemenu 0.8s linear;
-  background-color: rgb(21 57 78);
-  color: rgb(222, 222, 222);
 }
 
 @keyframes animatemenu {
@@ -107,10 +138,16 @@ input#openSidebarMenu {
   }
 }
 
-/* 
-.bg-secondary {
-    background: #F8F8F8;
+
+
+.slider {
+  background-image: url("../public/images/slides/4.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 400px;
 }
+
+/* 
 
 .height-10 {
     height: 10vh;
@@ -135,53 +172,6 @@ input[type=number]::-webkit-outer-spin-button {
 */
 
 /*
-
-
-.btn-login {
-    background: #db2777;
-    transition: all .4s ease-in-out;
-}
-
-.btn-login:hover {
-    color: #db2777;
-    background: rgb(21 57 78);
-}
-
-.btn-register {
-    background: rgb(21 57 78);
-    color: #db2777;
-    transition: all .4s ease-in-out;
-}
-
-.btn-register:hover {
-    background: #db2777;
-    color: rgb(222, 222, 222);
-}
-
-
-
-
-.contain {
-    background-color: #e8e8e8;
-}
-
-
-.border-top {
-    box-shadow: 0px -1px 4px 0px #f1eeee;
-}
-
-.home {
-    width: 100%;
-    height: 700px;
-    background: url('./images/nav-image.jpg');
-    background-position: center;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-
-
-
-
 
 
 .form {
