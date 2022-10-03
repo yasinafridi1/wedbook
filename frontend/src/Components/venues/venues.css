@@ -1,0 +1,9 @@
+.inputs {
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  outline: none;
+}
+input ::placeholder {
+  text-align: center;
+}

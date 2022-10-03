@@ -1,8 +1,9 @@
 import React from "react";
 import Index from "./Components/home/Index";
+import Venues from "./Components/venues/Venues";
 
 function App() {
-  return <Index />;
+  return <Venues />;
 }
 
 export default App;
