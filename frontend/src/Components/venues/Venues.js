@@ -5,6 +5,7 @@ import Navbar from "../home/header/Navbar";
 import Grid from "./Grid";
 import Hall from "./Hall";
 import Search from "./Search";
+import List from "./List";
 
 const Venues = () => {
   return (
@@ -12,7 +13,8 @@ const Venues = () => {
       <Navbar />
       <Search />
       <Hall />
-      <Grid />
+      <List />
+      {/* <Grid /> */}
       <Aboutus />
       <Contactus />
     </div>
