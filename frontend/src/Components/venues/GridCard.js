@@ -1,9 +1,9 @@
 import React from "react";
-const Card = ({ Image }) => {
+const GridCard = ({ Image }) => {
   return (
-    <div class="mx-4 max-w-sm bg-slate-300 rounded-lg border border-gray-200">
+    <div className="mx-4 max-w-sm bg-slate-300 rounded-lg border border-gray-200">
       <a href="#">
-        <img class="rounded-t-lg w-full" src={Image} alt="" />
+        <img className="rounded-t-lg w-full" src={Image} alt="" />
       </a>
       <div className="flex justify-between items-center px-4 pt-4">
         <span className="font-bold text-2xl">Venue</span>
@@ -30,4 +30,4 @@ const Card = ({ Image }) => {
   );
 };
 
-export default Card;
+export default GridCard;

@@ -1,9 +1,28 @@
 .inputs {
   border: none;
-  border-radius: 30px;
   font-size: 15px;
   outline: none;
+  height: 30px;
 }
 input ::placeholder {
   text-align: center;
+}
+.listViewtextDiv {
+  height: 60px;
+  overflow: hidden;
+}
+.listCard {
+  height: 215px;
+  margin-bottom: 25px;
+}
+.iconDiv {
+  outline: none;
+  border: none;
+  background-color: #fff;
+  margin-bottom: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+  margin-right: 16px;
 }
