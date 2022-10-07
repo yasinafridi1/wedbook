@@ -6,31 +6,33 @@ const Contactus = () => {
       <div className="pl-16">
         <h1 className="mb-2 font-bold text-xl">Contact Us</h1>
         <div className="flex flex-between items-start w-full flex-wrap">
-          <div className="w-1/3">
+          <div className="">
             <a
               href="https://goo.gl/maps/UiPfgRzcfvRwqSfc6"
-              className="flex justify-start items-center transition-all ease-in-out duration-500 hover:text-pink-600"
+              className="flex justify-start items-center transition-all py-1 ease-in-out duration-500 hover:text-pink-600"
             >
               <i className="fa-solid fa-location-dot text-base"></i>
-              <p className="font-semibold pt-2 pl-2 text-sm">Peshawer Pakistan</p>
+              <p className="font-semibold pt-2 pl-2 text-sm">
+                Peshawer Pakistan
+              </p>
             </a>
             <a
               href="tel:+923045760623"
-              className=" mt-3 flex justify-start items-center transition-all ease-in-out duration-500 hover:text-pink-600"
+              className=" mt-3 flex justify-start items-center transition-all py-1 ease-in-out duration-500 hover:text-pink-600"
             >
               <i className="fa-solid fa-phone text-base"></i>
               <p className="font-semibold pl-2 text-sm">+923045760623</p>
             </a>
             <a
               href="https://wa.me/+923139027087"
-              className="mt-3 flex justify-start items-center transition-all ease-in-out duration-500 hover:text-pink-600"
+              className="mt-3 flex justify-start items-center transition-all py-1 ease-in-out duration-500 hover:text-pink-600"
             >
               <i className="fa-brands fa-whatsapp text-base"></i>
               <p className="font-semibold pl-2 text-sm">+923139027087</p>
             </a>
             <a
               href="mailto:tahmeedullah651@gmail.com"
-              className="mt-3 flex justify-start items-center transition-all ease-in-out duration-500 hover:text-pink-600"
+              className="mt-3 flex justify-start py-1 mb-6 items-center transition-all ease-in-out duration-500 hover:text-pink-600"
             >
               <i className="fa-solid fa-envelope text-base"></i>
               <p className="font-semibold pl-2 text-sm">
@@ -81,10 +83,18 @@ const Contactus = () => {
         {/* <div className="w-full xsm:w-1/2 sm:w-1/2 mt-5 lg:w-1/2"> */}
         <div className="mt-3 flex flex-between items-start w-full flex-col flex-wrap">
           <a href="https://www.apple.com/store" className="">
-            <img className="w-52 h-16 mb-2" src={`${process.env.PUBLIC_URL}/images/Apple.png`} alt="" />
+            <img
+              className="w-52 h-16 mb-2"
+              src={`${process.env.PUBLIC_URL}/images/Apple.png`}
+              alt=""
+            />
           </a>
           <a href="https://play.google.com/store" className="">
-            <img className="w-52 h-16 mt-3" src={`${process.env.PUBLIC_URL}/images/Play.png`} alt="" />
+            <img
+              className="w-52 h-16 mt-3"
+              src={`${process.env.PUBLIC_URL}/images/Play.png`}
+              alt=""
+            />
           </a>
         </div>
         {/* <div className="mt-3 flex flex-between items-start w-full flex-col flex-wrap">

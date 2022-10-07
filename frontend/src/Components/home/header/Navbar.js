@@ -65,62 +65,6 @@ const Navbar = () => {
             Sign up
           </a>
         </div>
-        {/* <div className="flex flex-between pl-2 sm:pl-3 items-center w-2/3 sm:w-1/3">
-          <div className="flex w-1/2 xsm:pl-4">
-            <h2 className="text-xl pt-1 xsm:text-3xl font-bold text-yellow-300 header-text">
-              WedBook
-            </h2>
-          </div>
-        </div>
-        <ul className="hidden pr-1 xl:w-1/2 sm:flex sm:justify-evenly w-1/2">
-          <li>
-            <a
-              href="/"
-              className="pl-8 xl:text-xl lg:text-lg md:text-base sm:text-xs sm:font-bold hover:text-pink-600 transition ease-in-out duration-500"
-            >
-              Home
-            </a>
-          </li>
-          <li>
-            <a
-              href="/products"
-              className="xl:text-xl lg:text-lg md:text-base sm:pl-5 sm:text-xs sm:font-bold hover:text-pink-600 transition ease-in-out duration-500"
-            >
-              Products
-            </a>
-          </li>
-          <li>
-            {" "}
-            <a
-              href="#about"
-              className="xl:text-xl lg:text-lg md:text-base sm:pl-5 sm:text-xs sm:font-bold hover:text-pink-600 transition ease-in-out duration-500"
-            >
-              About
-            </a>
-          </li>
-          <li>
-            <a
-              href="#contact"
-              className="xl:text-xl lg:text-lg md:text-base sm:pl-5 sm:text-xs sm:font-bold hover:text-pink-600 transition ease-in-out duration-500 mr-2 lg:mr-0"
-            >
-              Contact
-            </a>
-          </li>
-        </ul>
-        <div className="pr-12">
-          <a
-            href="/signin"
-            className="xl:text-xl lg:text-lg md:text-base sm:pl-5 sm:text-xs sm:font-bold hover:text-pink-600 transition ease-in-out duration-500 mr-2 lg:mr-0"
-          >
-            Sign in
-          </a>
-          <a
-            href="/signup"
-            className="xl:text-xl lg:text-lg md:text-base sm:pl-5 sm:text-xs sm:font-bold hover:text-pink-600 transition ease-in-out duration-500 mr-2 lg:mr-0"
-          >
-            Sign up
-          </a>
-        </div> */}
         <input type="checkbox" id="openSidebarMenu" />
         <label
           htmlFor="openSidebarMenu"
