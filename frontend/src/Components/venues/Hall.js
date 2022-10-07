@@ -5,7 +5,7 @@ import List from "./List";
 const Hall = () => {
   const [grid, setGrid] = useState(true);
   return (
-    <div className="pt-16 pb-4">
+    <div className="py-24">
       <div className="px-8 flex justify-between w-full">
         <div>
           <label className="pl-8 pr-3 font-semibold text-lg" htmlFor="city">
