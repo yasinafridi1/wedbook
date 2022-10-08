@@ -1,0 +1,29 @@
+.Banner_Image {
+  width: 750px;
+  height: 300px;
+}
+.width {
+  width: 750px;
+}
+.border_b {
+  border-bottom: 2px solid gray;
+}
+.vendor_services {
+  width: 250px;
+  height: auto;
+}
+.vendor_padding {
+  padding-top: 118.5px;
+}
+.gallery {
+  height: auto;
+  width: 1019px;
+}
+.Image_width {
+  width: 210px;
+  height: 280px;
+}
+.Image_height {
+  width: 210px;
+  height: 180px;
+}
