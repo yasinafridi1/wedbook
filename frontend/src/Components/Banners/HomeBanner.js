@@ -1,6 +1,6 @@
 import React from "react";
 
-const Banner = () => {
+const HomeBanner = () => {
   return (
     <div className="flex justify-center items-center w-full pt-24">
       <div className="w-1/2 pl-12">
@@ -22,4 +22,4 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default HomeBanner;

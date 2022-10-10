@@ -1,14 +1,37 @@
 import React from "react";
-import Index from "./Components/home/Index";
+// import Home from "./pages/home/Home";
 import Venues from "./Components/venues/Venues";
-import Vendor from "./pages/vendor/Vendor";
 
 function App() {
   return (
     <>
-      {/* <Index /> */}
-      {/* <Venues /> */}
-      <Vendor />
+      <Venues />
+      {/* <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+        <Routes>
+          <Route path="/home" element={<Home />} />
+        </Routes>
+        <Routes>
+          <Route path="/venues" element={<Home />} />
+        </Routes>
+        <Routes>
+          <Route path="/caterer" element={<Home />} />
+        </Routes>
+        <Routes>
+          <Route path="/decorator" element={<Home />} />
+        </Routes>
+        <Routes>
+          <Route path="/cook" element={<Home />} />
+        </Routes>
+        <Routes>
+          <Route path="/venue/page" element={<Home />} />
+        </Routes>
+        <Routes>
+          <Route path="*" element={<Home />} />
+        </Routes>
+      </Router> */}
     </>
   );
 }

@@ -3,9 +3,8 @@ import React from "react";
 const LeftCard = ({ name }) => {
   return (
     <div
-      className={`${
-        name == "Venues" ? "bg-venues" : "bg-decoration"
-      } section h-52`}
+      className={`${name == "Venues" ? "bg-venues" : "bg-decoration"
+        } section h-52`}
     >
       <div className="wrapper h-full w-full flex justify-between items-center">
         <div className="pl-12">

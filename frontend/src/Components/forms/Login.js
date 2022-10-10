@@ -1,12 +1,11 @@
 import React from 'react';
-import './auth.css';
+import './form.css';
 
 const Login = () => {
     return (
         <div className='loginSection'>
             <div className="wrapper">
                 <div className="triangle">
-
                 </div>
                 <form>
                     <h1>Login Here</h1>

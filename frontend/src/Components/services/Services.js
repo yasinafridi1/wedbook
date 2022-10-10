@@ -1,6 +1,6 @@
 import React from "react";
-import LeftCard from "./LeftCard";
-import RightCard from "./RightCard";
+import LeftCard from "../cards/LeftCard";
+import RightCard from "../cards/RightCard";
 import './services.css';
 
 const Services = () => {
