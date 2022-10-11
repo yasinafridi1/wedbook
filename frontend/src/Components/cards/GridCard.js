@@ -1,23 +1,23 @@
 import React from "react";
 const GridCard = ({ data }) => {
   return (
-    <div className="mx-4 max-w-sm bg-slate-300 rounded-lg border border-gray-200">
-      <img className="rounded-t-lg w-full" src={data.image} alt="Vendor banner" />
+    <div className="mx-4 max-w-sm bg-slate-50 rounded-lg gridCard">
+      <img className="rounded-t-lg h-56 w-full" src={data.image} alt="Vendor banner" />
       <div className="flex justify-between items-center px-4 pt-4">
-        <span className="font-bold text-2xl">{data.name}</span>
-        <span>⭐{data.rating}({data.reviewCount})</span>
+        <span className="font-semibold text-xl">{data.name}</span>
+        <span className="text-sm font-semibold">⭐{data.rating}</span>
       </div>
-      <div className="text-sm px-6 pt-4">
+      <div className="text-sm px-4 pt-3">
         <i className="fa-sharp fa-solid fa-location-dot pr-2"></i>
-        <span>{data.location}</span>
+        <span className="text-sm text-gray-500">{data.location}</span>
       </div>
 
-      <div className="flex justify-between items-center px-4 mb-4 pt-4 pb-2">
+      <div className="flex justify-between items-center px-4 mb-4 pt-3 pb-2">
         <h1 className="font-bold">
-          Price/day: <span className="text-green-400">{data.price}</span>
+          Price/day: <span className="text-primary">{data.price}</span>
         </h1>
         <a
-          className="font-bold inline-block text-white px-6 py-1 bg-green-500"
+          className="font-bold inline-block text-white px-6 py-1 bg-primary hover:bg-teal-400 transition ease-in-out duration-500"
           href={data.path}
         >
           Visit

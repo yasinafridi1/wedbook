@@ -56,7 +56,6 @@ const Grid = () => {
     reviewCount: '34',
     path: '/janweddinghall5',
     price: '20000'
-
   },
   {
     name: "Jan Wedding halls 6",

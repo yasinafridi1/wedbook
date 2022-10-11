@@ -6,11 +6,11 @@ import "./venues.css";
 
 const Venues = () => {
   return (
-    <div id="venues">
+    <>
       <Navbar />
       <Filters />
       <Footer />
-    </div>
+    </>
   );
 };
 
