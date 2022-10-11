@@ -23,13 +23,19 @@
 }
 
 :root {
-  --bg-color: #e9eff4;
+  --bg-color: #F4FAFF;
   --text-secondary: #707070;
   --color-pink: #db2777;
+  --text-whitesh: #F8FCFF;
+}
+
+
+.text-menu-home {
+  color: var(--text-secondary);
 }
 
 .text-menu {
-  color: var(--text-secondary);
+  color: var(--text-whitesh);
 }
 
 html {
@@ -56,8 +62,12 @@ a {
   transition: all 0.3s ease-in-out;
   top: 0;
   z-index: 99;
+}
+
+.navHomeBg {
   background: var(--bg-color);
 }
+
 
 input#openSidebarMenu {
   display: none;
@@ -96,16 +106,16 @@ input#openSidebarMenu {
   transition: all 0.7s;
 }
 
-#openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.middle {
+#openSidebarMenu:checked~.sidebarIconToggle>.spinner.middle {
   opacity: 0;
 }
 
-#openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.top {
+#openSidebarMenu:checked~.sidebarIconToggle>.spinner.top {
   transform: rotate(140deg) translate(-15%, 100%);
   margin-top: 9px;
 }
 
-#openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.bottom {
+#openSidebarMenu:checked~.sidebarIconToggle>.spinner.bottom {
   transform: rotate(-140deg) translate(11%, 150%);
   margin-top: -8px;
 }

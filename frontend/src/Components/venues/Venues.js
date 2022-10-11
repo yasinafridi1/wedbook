@@ -1,18 +1,16 @@
 import React from "react";
-import Aboutus from "../footer/Aboutus";
-import Contactus from "../footer/Contactus";
-import Navbar from "../home/header/Navbar";
-import Hall from "./Hall";
-// import MultipleSelectCheckmarks from "./SearchBar";
+import Navbar from "../navbar/Navbar";
+import Filters from "./Filters";
+import Footer from "../footer/Footer";
+import "./venues.css";
 
 const Venues = () => {
   return (
-    <div id="venues">
+    <>
       <Navbar />
-      <Hall />
-      <Aboutus />
-      <Contactus />
-    </div>
+      <Filters />
+      <Footer />
+    </>
   );
 };
 

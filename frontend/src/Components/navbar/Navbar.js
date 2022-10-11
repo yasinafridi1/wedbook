@@ -1,7 +1,6 @@
 import React from "react";
-// import { Link } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = ({ directory }) => {
   window.addEventListener("scroll", () => {
     const nav = document.querySelector(".nav");
     if (window.scrollY > 100) {
@@ -12,12 +11,12 @@ const Navbar = () => {
   });
 
   return (
-    <nav className="nav fixed py-2 px-10 w-full flex justify-center items-center flex-col">
+    <nav className={`${directory === 'home' ? 'navHomeBg' : 'bg-primary'} nav fixed py-2 px-10 w-full flex justify-center items-center flex-col`}>
       <div className="w-full py-1 flex justify-between items-center">
-        <div className="text-3xl font-bold text-secular text-primary">
+        <div className={`${directory === 'home' ? 'text-primary' : 'text-menu'} text-3xl font-bold text-secular`}>
           WedBook
         </div>
-        <ul className="text-menu flex justify-between items-center">
+        <ul className={`${directory === 'home' ? 'text-menu-home' : 'text-menu'} flex justify-between items-center`}>
           <li>
             <a
               href="/"
@@ -28,7 +27,7 @@ const Navbar = () => {
           </li>
           <li>
             <a
-              href="/"
+              href="/services"
               className="pl-12 xl:text-xl lg:text-lg md:text-base sm:text-xs sm:font-bold hover:text-pink-900 transition ease-in-out duration-500"
             >
               Services
@@ -36,7 +35,7 @@ const Navbar = () => {
           </li>
           <li>
             <a
-              href="/"
+              href="#about"
               className="pl-12 xl:text-xl lg:text-lg md:text-base sm:text-xs sm:font-bold hover:text-pink-900 transition ease-in-out duration-500"
             >
               About
@@ -44,7 +43,7 @@ const Navbar = () => {
           </li>
           <li>
             <a
-              href="/"
+              href="#contact"
               className="pl-12 xl:text-xl lg:text-lg md:text-base sm:text-xs sm:font-bold hover:text-pink-900 transition ease-in-out duration-500"
             >
               Contact
@@ -54,7 +53,7 @@ const Navbar = () => {
         <div>
           <a
             href="/signin"
-            className="text-primary text-md px-2 font-bold hover:text-gray-600 transition ease-in-out duration-500"
+            className={`${directory === 'home' ? '' : 'navHomeBg'} py-1 text-primary text-md px-2 font-bold hover:text-gray-600 transition ease-in-out duration-500`}
           >
             Sign in
           </a>

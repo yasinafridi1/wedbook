@@ -1,14 +1,19 @@
 import React from "react";
-import Index from "./Components/home/Index";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/home/Home";
 import Venues from "./Components/venues/Venues";
-import Vendor from "./pages/vendor/Vendor";
 
 function App() {
   return (
     <>
-      {/* <Index /> */}
-      <Venues />
-      {/* <Vendor /> */}
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+        <Routes>
+          <Route path="/home" element={<Home />} />
+        </Routes>
+      </Router>
     </>
   );
 }

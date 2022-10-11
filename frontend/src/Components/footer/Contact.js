@@ -1,8 +1,10 @@
 import React from "react";
+import appStore from "../../images/Apple.png";
+import playStore from "../../images/Play.png";
 
 const Contactus = () => {
   return (
-    <section className="h-full w-full flex justify-between items-center">
+    <section id="contact" className="h-full w-full flex justify-between items-center">
       <div className="pl-16">
         <h1 className="mb-2 font-bold text-xl">Contact Us</h1>
         <div className="flex flex-between items-start w-full flex-wrap">
@@ -82,18 +84,18 @@ const Contactus = () => {
         <h1 className="font-bold text-xl pr-16">Download Our Application</h1>
         {/* <div className="w-full xsm:w-1/2 sm:w-1/2 mt-5 lg:w-1/2"> */}
         <div className="mt-3 flex flex-between items-start w-full flex-col flex-wrap">
-          <a href="https://www.apple.com/store" className="">
+          <a href="https://www.apple.com/store">
             <img
               className="w-52 h-16 mb-2"
-              src={`${process.env.PUBLIC_URL}/images/Apple.png`}
-              alt=""
+              src={appStore}
+              alt="App store"
             />
           </a>
-          <a href="https://play.google.com/store" className="">
+          <a href="https://play.google.com/store">
             <img
               className="w-52 h-16 mt-3"
-              src={`${process.env.PUBLIC_URL}/images/Play.png`}
-              alt=""
+              src={playStore}
+              alt="Google play store"
             />
           </a>
         </div>

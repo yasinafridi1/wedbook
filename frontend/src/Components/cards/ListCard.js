@@ -1,14 +1,13 @@
 import React from "react";
-import "./venues.css";
-// import Image from "../../images/one.jpg";
-const Card2 = ({ Image }) => {
+
+const ListCard = ({ data }) => {
   return (
     // hero div
-    <div className="w-3/4 listCard rounded-lg flex mx-32 bg-slate-300">
+    <div className="w-3/4 listCard rounded-lg flex mx-32 bg-slate-50">
       <div className="w-1/3 h-full">
         <img
           className="w-full h-full overflow-hidden rounded-l-lg"
-          src={Image}
+          src={data.image}
           alt="image not found"
         />
       </div>
@@ -16,30 +15,28 @@ const Card2 = ({ Image }) => {
       <div className="w-2/3 h-full p-4">
         {/* // TITLE */}
         <div className="w-full flex justify-between  font-bold text-xl">
-          <h2>Venue</h2>
-          <span>⭐ 4.3 (32 reviews)</span>
+          <h2>{data.name}</h2>
+          <span className="text-sm font-semibold">⭐ {data.rating}</span>
         </div>
         {/* // Location */}
         <div className="text-sm pt-4">
           <i className="fa-sharp fa-solid fa-location-dot pr-2"></i>
-          <span>Location Bilor plaza Peshawar</span>
+          <span>{data.location}</span>
         </div>
         {/* Discrp */}
         <div className="listViewtextDiv">
           <p className="pt-2 ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-            veniam laborum vel expedita rerum sit omnis placeat, nesciunt nam
-            sunt.
+            {data.about}
           </p>
         </div>
         {/* Price and read more */}
         <div className="w-full flex justify-between mt-6">
           <h1 className="font-bold">
-            Price/day: <span className="text-green-400">1000</span>
+            Price/day: <span className="text-primary">{data.price}</span>
           </h1>
           <a
-            className="font-bold inline-block text-white px-4 py-1 bg-green-500"
-            href="/"
+            className="font-bold inline-block text-white px-4 py-1 bg-primary hover:bg-teal-400"
+            href={data.path}
           >
             Visit
           </a>
@@ -49,4 +46,4 @@ const Card2 = ({ Image }) => {
   );
 };
 
-export default Card2;
+export default ListCard;
