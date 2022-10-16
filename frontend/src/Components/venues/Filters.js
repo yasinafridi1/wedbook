@@ -6,7 +6,7 @@ import { BsFillGridFill } from "react-icons/bs";
 
 
 const Filters = () => {
-  const [grid, setGrid] = useState(true);
+  const [grid, setGrid] = useState(false);
   return (
     <>
       <div className="pt-24 pb-3">
@@ -59,9 +59,9 @@ const Filters = () => {
           </div>
           <div>
             <div className="flex justify-center items-center w-full ">
-              <BiListUl className="listIcon"
+              <BiListUl className={`${grid ? 'hover:text-teal-500' : 'text-primary'} cursor-pointer listIcon`}
                 onClick={() => setGrid(false)} />
-              <BsFillGridFill className="gridIcon"
+              <BsFillGridFill className={`${grid ? 'text-primary' : 'text-black hover:text-teal-500'} cursor-pointer gridIcon`}
                 onClick={() => setGrid(true)} />
               <input
                 className="inputs pl-2 flex justify-center items-center w-48 h-8"

@@ -1,18 +1,19 @@
 import React from "react";
+import img from "../../images/card/one.jpg";
+import { Link } from "react-router-dom";
 
 const RightCard = ({ name }) => {
   return (
-    <div
-      className={`${
-        name == "Catering" ? "bg-catering" : "bg-cook"
-      } section h-52`}
+    <Link to={'/venues'}
+      className={`${name == "Catering" ? "bg-catering" : "bg-cook"
+        } section h-52`}
     >
       <div className="wrapper h-full w-full flex justify-between items-center">
         <div className="Rimage h-full overflow-hidden">
           <a href="#">
             <img
               className="w-full h-full"
-              src={`${process.env.PUBLIC_URL}/images/venues.jpg`}
+              src={img}
               alt=""
             />
           </a>
@@ -24,7 +25,7 @@ const RightCard = ({ name }) => {
           </h6>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

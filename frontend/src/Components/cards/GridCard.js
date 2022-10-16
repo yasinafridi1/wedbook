@@ -1,4 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
+
 const GridCard = ({ data }) => {
   return (
     <div className="mx-4 max-w-sm bg-slate-50 rounded-lg gridCard">
@@ -16,12 +19,12 @@ const GridCard = ({ data }) => {
         <h1 className="font-bold">
           Price/day: <span className="text-primary">{data.price}</span>
         </h1>
-        <a
+        <Link to={'/venues/hall1'}
           className="font-bold inline-block text-white px-6 py-1 bg-primary hover:bg-teal-400 transition ease-in-out duration-500"
           href={data.path}
         >
           Visit
-        </a>
+        </Link>
       </div>
     </div>
   );

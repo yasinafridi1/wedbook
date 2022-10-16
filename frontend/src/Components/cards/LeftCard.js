@@ -1,8 +1,10 @@
 import React from "react";
+import img from "../../images/card/three.jpg";
+import { Link } from "react-router-dom";
 
 const LeftCard = ({ name }) => {
   return (
-    <div
+    <Link to={'/venues'}
       className={`${name == "Venues" ? "bg-venues" : "bg-decoration"
         } section h-52`}
     >
@@ -17,13 +19,13 @@ const LeftCard = ({ name }) => {
           <a href="#">
             <img
               className="w-full h-full"
-              src={`${process.env.PUBLIC_URL}/images/venues.jpg`}
+              src={img}
               alt=""
             />
           </a>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

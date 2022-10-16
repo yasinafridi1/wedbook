@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "../../Components/footer/Footer";
-import Navbar from "../../Components/home/header/Navbar";
+import Navbar from "../../Components/navbar/Navbar";
 import Gallery from "./Gallery";
 import Space from "./Space";
 const Vendor = () => {
@@ -13,5 +13,6 @@ const Vendor = () => {
     </div>
   );
 };
+
 
 export default Vendor;

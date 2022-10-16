@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 
 const ListCard = ({ data }) => {
   return (
@@ -34,12 +36,12 @@ const ListCard = ({ data }) => {
           <h1 className="font-bold">
             Price/day: <span className="text-primary">{data.price}</span>
           </h1>
-          <a
+          <Link
+            to={'/venues/hall1'}
             className="font-bold inline-block text-white px-4 py-1 bg-primary hover:bg-teal-400"
-            href={data.path}
           >
             Visit
-          </a>
+          </Link>
         </div>
       </div>
     </div>

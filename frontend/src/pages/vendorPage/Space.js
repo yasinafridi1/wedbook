@@ -14,9 +14,9 @@ const Space = () => {
         <Provide />
         <Detail />
       </div>
-      <div className="vendor_padding px-4">
+      {/* <div className="vendor_padding px-4">
         <VendorServices />
-      </div>
+      </div> */}
     </div>
   );
 };

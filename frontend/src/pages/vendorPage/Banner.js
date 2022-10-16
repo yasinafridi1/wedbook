@@ -1,5 +1,6 @@
 import React from "react";
 import "./Vendor.css";
+import img1 from "../../images/card/two.jpg";
 const Banner = () => {
   return (
     <>
@@ -9,7 +10,7 @@ const Banner = () => {
       <div className="Banner_Image">
         <img
           className="w-full h-full"
-          src={`${process.env.PUBLIC_URL}/images/card/one.jpg`}
+          src={img1}
           alt="Image"
         />
       </div>

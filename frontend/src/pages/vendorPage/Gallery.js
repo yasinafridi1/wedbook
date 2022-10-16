@@ -1,4 +1,5 @@
 import React from "react";
+import img1 from "../../images/venues.jpg";
 
 const Gallery = () => {
   return (
@@ -10,21 +11,21 @@ const Gallery = () => {
             <div className="Image_width mr-4 mb-6">
               <img
                 className="h-full w-full"
-                src={`${process.env.PUBLIC_URL}/images/card/one.jpg`}
+                src={img1}
                 alt="image1"
               />
             </div>
             <div className="Image_width mr-4 mb-6">
               <img
                 className="h-full w-full"
-                src={`${process.env.PUBLIC_URL}/images/card/one.jpg`}
+                src={img1}
                 alt="image1"
               />
             </div>
             <div className="Image_width mr-4 mb-6">
               <img
                 className="h-full w-full"
-                src={`${process.env.PUBLIC_URL}/images/card/one.jpg`}
+                src={img1}
                 alt="image1"
               />
             </div>
@@ -33,21 +34,21 @@ const Gallery = () => {
             <div className="Image_height mr-4 mb-6">
               <img
                 className="h-full w-full"
-                src={`${process.env.PUBLIC_URL}/images/card/two.jpg`}
+                src={img1}
                 alt="image1"
               />
             </div>
             <div className="Image_width mr-4 mb-6">
               <img
                 className="h-full w-full"
-                src={`${process.env.PUBLIC_URL}/images/card/one.jpg`}
+                src={img1}
                 alt="image1"
               />
             </div>
             <div className="Image_width mr-4 mb-6">
               <img
                 className="h-full w-full"
-                src={`${process.env.PUBLIC_URL}/images/card/one.jpg`}
+                src={img1}
                 alt="image1"
               />
             </div>
@@ -56,21 +57,21 @@ const Gallery = () => {
             <div className="Image_width mr-4 mb-6">
               <img
                 className="h-full w-full"
-                src={`${process.env.PUBLIC_URL}/images/card/one.jpg`}
+                src={img1}
                 alt="image1"
               />
             </div>
             <div className="Image_width mr-4 mb-6">
               <img
                 className="h-full w-full"
-                src={`${process.env.PUBLIC_URL}/images/card/one.jpg`}
+                src={img1}
                 alt="image1"
               />
             </div>
             <div className="Image_width mr-4 mb-6">
               <img
                 className="h-full w-full"
-                src={`${process.env.PUBLIC_URL}/images/card/one.jpg`}
+                src={img1}
                 alt="image1"
               />
             </div>
@@ -79,21 +80,21 @@ const Gallery = () => {
             <div className="Image_height mr-4 mb-6">
               <img
                 className="h-full w-full"
-                src={`${process.env.PUBLIC_URL}/images/card/three.jpg`}
+                src={img1}
                 alt="image1"
               />
             </div>
             <div className="Image_width mr-4 mb-6">
               <img
                 className="h-full w-full"
-                src={`${process.env.PUBLIC_URL}/images/card/one.jpg`}
+                src={img1}
                 alt="image1"
               />
             </div>
             <div className="Image_width mr-4 mb-6">
               <img
                 className="h-full w-full"
-                src={`${process.env.PUBLIC_URL}/images/card/one.jpg`}
+                src={img1}
                 alt="image1"
               />
             </div>
