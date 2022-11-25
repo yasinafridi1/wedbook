@@ -1,21 +1,22 @@
 .section {
-  width: 500px;
+  width: 620px;
+  height: 150px;
 }
 
 .image {
-  border-top-left-radius: 40%;
-  border-bottom-left-radius: 40%;
-  width: 45%;
+  border-top-left-radius: 45%;
+  border-bottom-left-radius: 45%;
+  width: 40%;
 }
 
 .text {
-  width: 55%;
+  width: 60%;
 }
 
 .Rimage {
-  border-top-right-radius: 40%;
-  border-bottom-right-radius: 40%;
-  width: 45%;
+  border-top-right-radius: 45%;
+  border-bottom-right-radius: 45%;
+  width: 40%;
 }
 
 .bg-venues {

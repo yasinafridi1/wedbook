@@ -4,7 +4,7 @@ import playStore from "../../images/Play.png";
 
 const Contactus = () => {
   return (
-    <section id="contact" className="h-full w-full flex justify-between items-center">
+    <section id="contact" className="h-full w-full flex justify-between items-center pt-8">
       <div className="pl-16">
         <h1 className="mb-2 font-bold text-xl">Contact Us</h1>
         <div className="flex flex-between items-start w-full flex-wrap">

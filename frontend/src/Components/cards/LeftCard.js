@@ -6,12 +6,12 @@ const LeftCard = ({ name }) => {
   return (
     <Link to={'/venues'}
       className={`${name == "Venues" ? "bg-venues" : "bg-decoration"
-        } section h-52`}
+        } section`}
     >
       <div className="wrapper h-full w-full flex justify-between items-center">
-        <div className="pl-12">
+        <div className="pl-12 ml-6">
           <h1 className="text-3xl text-primary text-alkalami">{name}</h1>
-          <h6 className="pt-1 text-lg">
+          <h6 className="text-lg -mt-2">
             Book the best venue <br /> banquet hall
           </h6>
         </div>

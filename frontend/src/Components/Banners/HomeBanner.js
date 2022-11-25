@@ -1,8 +1,11 @@
 import React from "react";
+import { Link, useNavigate } from "react-router-dom";
+import AppButton from "../forms/AppButton";
 
 const HomeBanner = () => {
+  const navigate = useNavigate();
   return (
-    <div className="flex justify-center items-center w-full pt-24">
+    <div className="flex justify-center items-center w-full py-10">
       <div className="w-1/2 pl-12">
         <h6 className="text-primary font-semibold">
           Once in a lifetime moment...
@@ -19,6 +22,13 @@ const HomeBanner = () => {
         <div className="ml-12 font-bold inline-block text-white px-4 py-2 bg-primary rounded-br-2xl  transition-all duration-500 ease-in-out hover:bg-teal-700">
           <a href="#services">Get Started</a>
         </div>
+        {/* <AppButton
+          onClick={() => navigate("/details", { state: { user: "tehmedd" } })}
+          bg={"bg-blue-400"}
+        >
+          Get Started
+        </AppButton> */}
+        {/* <Link to={"/venues"}>login</Link> */}
       </div>
     </div>
   );

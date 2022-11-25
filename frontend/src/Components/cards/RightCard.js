@@ -6,7 +6,7 @@ const RightCard = ({ name }) => {
   return (
     <Link to={'/venues'}
       className={`${name == "Catering" ? "bg-catering" : "bg-cook"
-        } section h-52`}
+        } section`}
     >
       <div className="wrapper h-full w-full flex justify-between items-center">
         <div className="Rimage h-full overflow-hidden">
@@ -18,9 +18,9 @@ const RightCard = ({ name }) => {
             />
           </a>
         </div>
-        <div className="pr-12">
+        <div className="pr-12 mr-6">
           <h1 className="text-3xl text-primary text-alkalami">{name}</h1>
-          <h6 className="pt-1 text-lg">
+          <h6 className="text-lg -mt-2">
             Book the best venue <br /> banquet hall
           </h6>
         </div>

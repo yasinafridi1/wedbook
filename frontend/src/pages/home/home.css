@@ -1,8 +1,22 @@
 .header {
-  height: 65vh;
+  height: 80vh;
   width: 100vw;
-  /* background: url("../../images/Image.jpg"); */
+  background: url(../../images/Homez.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%; 
+}
+.Banner {
+  height: 40vh;
+  width: 100vw;
+  background: url(../../images/Homess.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
+}
+.bg-color-register{
+  background-color: #8DB8B5;
+}
+.Line{
+  background-color: #e7e7e7;
 }
