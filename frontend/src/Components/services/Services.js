@@ -6,15 +6,15 @@ import './services.css';
 const Services = () => {
   return (
     <div>
-      <section className="pt-7 px-16 flex justify-between items-center border-cyan-300">
+      <section className="pt-7 px-14 flex justify-between items-center border-cyan-300">
         <div>
-          <h1 className="text-3xl font-extrabold text-secular text-gray-500">Main Services</h1>
+          <h1 className="text-3xl font-extrabold text-ubunto text-gray-500">Main Services</h1>
         </div>
-        <div className="text-lg font-bold text-white py-2 bg-primary px-4 hover:bg-teal-700 rounded-tr-2xl transition ease-in-out duration-500">
+        <div className="text-lg text-white text-ubunto  py-1 bg-primary px-4 hover:bg-teal-700 rounded-tr-2xl transition ease-in-out duration-500">
           <button>Become a Provider</button>
         </div>
       </section>
-      <div className="p-10 gap-x-4 w-full place-items-center grid grid-cols-1 xsm:grid-cols-2  xsm:gap-x-4 xl:grid-cols-2 2xl:grid-cols-4 xl:gap-x-2  gap-y-6 items-center transition-all ease-out duration-700">
+      <div className="grid grid-cols-2 place-content-center gap-x-2 gap-y-2 w-[91%] mx-auto mt-4 mb-10">
         <LeftCard name="Venues" />
         <RightCard name="Catering" />
         <LeftCard name="Decorator" />

@@ -4,8 +4,9 @@
   background: url(../../images/Homez.jpeg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100% 100%; 
+  background-size: 100% 100%;
 }
+
 .Banner {
   height: 40vh;
   width: 100vw;
@@ -14,9 +15,15 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-.bg-color-register{
-  background-color: #8DB8B5;
-}
-.Line{
+
+.Line {
   background-color: #e7e7e7;
+}
+
+.testimonial-message {
+  position: relative;
+}
+
+.testimonial-message::after {
+  content: " ";
 }

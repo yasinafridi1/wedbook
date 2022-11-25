@@ -9,10 +9,10 @@ const Home = () => {
   return (
     <>
       <Navbar directory="home" />
-      <HomeHeader/>
+      <HomeHeader />
+      <HomeBanner />
       <Services />
-      <MainBanner/>
-      <HomeBanner />    
+      <MainBanner />
       <Footer />
     </>
   );

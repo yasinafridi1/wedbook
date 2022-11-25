@@ -11,16 +11,19 @@
 
 @tailwind utilities;
 
-/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"); */
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Alkalami&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@300&display=swap');
+
 
 * {
-  /* font-family: 'Roboto', sans-serif; */
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Inter', sans-serif;
   scroll-behavior: smooth;
 }
+
+
 
 :root {
   --bg-color: #F4FAFF;
@@ -30,13 +33,19 @@
 }
 
 
-.text-menu-home {
+/* .text-menu-home {
   color: var(--text-secondary);
+} */
+
+
+.text-testimonial {
+  font-family: 'Asap Condensed', sans-serif;
 }
 
 .text-menu {
   color: var(--text-whitesh);
 }
+
 
 html {
   overflow-x: hidden;
@@ -54,8 +63,8 @@ a {
   font-family: "Secular One", sans-serif;
 }
 
-.text-alkalami {
-  font-family: "Alkalami", serif;
+.text-ubunto {
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .nav {
@@ -66,6 +75,14 @@ a {
 
 .navHomeBg {
   background: var(--bg-color);
+}
+
+
+.banner-register {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -55%);
 }
 
 

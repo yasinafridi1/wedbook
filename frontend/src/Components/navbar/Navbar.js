@@ -16,7 +16,7 @@ const Navbar = ({ directory }) => {
         <div className={`${directory === 'home' ? 'text-primary' : 'text-menu'} text-3xl font-bold text-secular`}>
           WedBook
         </div>
-        <ul className={`${directory === 'home' ? 'text-menu-home' : 'text-menu'} flex justify-between items-center`}>
+        <ul className={`${directory === 'home' ? 'text-gray-500' : 'text-menu'} flex justify-between items-center`}>
           <li>
             <a
               href="/"

@@ -6,23 +6,13 @@ const RightCard = ({ name }) => {
   return (
     <Link to={'/venues'}
       className={`${name == "Catering" ? "bg-catering" : "bg-cook"
-        } section`}
+        } cards`}
     >
-      <div className="wrapper h-full w-full flex justify-between items-center">
-        <div className="Rimage h-full overflow-hidden">
-          <a href="#">
-            <img
-              className="w-full h-full"
-              src={img}
-              alt=""
-            />
-          </a>
-        </div>
-        <div className="pr-12 mr-6">
-          <h1 className="text-3xl text-primary text-alkalami">{name}</h1>
-          <h6 className="text-lg -mt-2">
-            Book the best venue <br /> banquet hall
-          </h6>
+      <img className="card-right-image" src={img} alt="" />
+      <div className="w-[60%] flex justify-start items-center">
+        <div className="pl-5 pr-5">
+          <h1 className="text-ubunto text-primary text-2xl">{name}</h1>
+          <p className="font-semibold text-gray-300">Book the best for you</p>
         </div>
       </div>
     </Link>

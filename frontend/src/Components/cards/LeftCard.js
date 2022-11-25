@@ -6,25 +6,15 @@ const LeftCard = ({ name }) => {
   return (
     <Link to={'/venues'}
       className={`${name == "Venues" ? "bg-venues" : "bg-decoration"
-        } section`}
+        } cards`}
     >
-      <div className="wrapper h-full w-full flex justify-between items-center">
-        <div className="pl-12 ml-6">
-          <h1 className="text-3xl text-primary text-alkalami">{name}</h1>
-          <h6 className="text-lg -mt-2">
-            Book the best venue <br /> banquet hall
-          </h6>
-        </div>
-        <div className="image h-full overflow-hidden">
-          <a href="#">
-            <img
-              className="w-full h-full"
-              src={img}
-              alt=""
-            />
-          </a>
+      <div className="w-[60%] flex justify-end items-center">
+        <div className="text-right pr-5 pl-3">
+          <h1 className="text-ubunto text-primary text-2xl">{name}</h1>
+          <p className="font-semibold text-gray-300">Book the best for you</p>
         </div>
       </div>
+      <img className="card-left-image" src={img} alt="" />
     </Link>
   );
 };

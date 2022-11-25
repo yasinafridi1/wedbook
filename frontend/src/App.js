@@ -12,9 +12,10 @@ import HomeHeader from "./Components/Banners/HomeHeader";
 import Banner from "./Components/Banners/Banner";
 import Testimonial from "./Components/Banners/Testimonial";
 function App() {
+
   return (
     <>
-    {/* <HomeHeader/>
+      {/* <HomeHeader/>
     <Banner/>
     <Testimonial/> */}
       {/* <Router>
