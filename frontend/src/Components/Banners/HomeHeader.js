@@ -1,5 +1,5 @@
 import React from "react";
-import "../../pages/home/home.css";
+import "../../pages/Customer/home.css";
 import Register from "./Register";
 const HomeHeader = () => {
   return (
