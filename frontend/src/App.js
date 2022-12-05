@@ -8,7 +8,7 @@ import CustomerRoutes from "./CustomerRoutes";
 
 // import VendorPageRouting from "./pages/VendorPageRouting";
 function App() {
-  const [user, setuser] = useState('customer');
+  const [user, setuser] = useState('vendor');
 
   return (
     <>

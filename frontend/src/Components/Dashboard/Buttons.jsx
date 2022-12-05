@@ -5,11 +5,12 @@ const Buttons = ({name,order,onClick}) => {
   return (
     <section
     onClick={onClick}
-     className="flex w-[170px] h-[100px] cardshadow mt-6 hover:bg-[#48c277]">
-      <div className="w-full h-full flex justify-center">
-        <div className="flex flex-col justify-center items-center">
-          <h1 className="font-bold text-3xl pb-2">{order}</h1>
-          <span className="text-xs font-semibold">{name}</span>
+     className="flex w-[250px] h-[80px] cardshadow mt-6">
+      <div className="w-full h-full flex justify-between">
+        <div className="flex flex-col justify-center pl-4">
+          <span className="text-sm font-bold text-primary">{name}</span>
+          <h1 className="font-bold text-4xl pt-1 text-secular text-primary">{order}</h1>
+
         </div>
         {/* <div className="font-bold text-5xl flex items-center mr-4">
          {icon}

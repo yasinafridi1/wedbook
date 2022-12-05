@@ -29,18 +29,18 @@ const Sidebar = () => {
       <nav
         className={`${
           sidebar
-            ? "nav-menu active z-50 bg-[#4ddb84]"
+            ? "nav-menu active z-50 bg-green-300"
             : "nav-menu z-50 bg-[#4ddb84]"
         } `}
       >
         <div className="text-2xl flex justify-end p-3">
           <AiOutlineClose onClick={() => setSideBar(!sidebar)} />
         </div>
-        <div className="w-full flex flex-col pl-6">
+        <div className="w-full flex flex-col pl-10">
           {SidebarData.map((item, index) => (
             <NavLink to={item.path} key={index} className="flex items-center">
-              <span className="flex py-4 pr-2">{item.icon}</span>
-              <span className="font-bold">{item.title}</span>
+              <span className="flex py-4 pr-3 text-2xl">{item.icon}</span>
+              <span className="text-xl font-bold">{item.title}</span>
             </NavLink>
           ))}
         </div>

@@ -1,7 +1,8 @@
 import React from "react";
 import Buttons from "../Dashboard/Buttons";
-import TableBody from "./TableBody";
-import { OrderData } from "../Data/OrderData";
+// import TableBody from "./TableBody";
+// import { OrderData } from "../Data/OrderData";
+import Calendar from "./OrderCalendar";
 const TableHeader = () => {
   return (
     <>
@@ -10,7 +11,8 @@ const TableHeader = () => {
         <Buttons name="Order of this month" order="10"/>
         <Buttons name="All Order" order="35"/>
       </div>
-      <div className="py-8 flex justify-center w-[100vw] h-[100vh]">
+      <Calendar/>
+      {/* <div className="py-8 flex justify-center w-[100vw] h-[100vh]">
         <table className="table-auto mt-2 bg-white order-table">
           <thead className="border border-green-500 bg-green-500">
             <tr>
@@ -29,7 +31,7 @@ const TableHeader = () => {
             })}
           </tbody>
         </table>
-      </div>
+      </div> */}
     </>
   );
 };
