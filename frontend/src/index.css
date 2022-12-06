@@ -1,10 +1,6 @@
 @tailwind base;
 @tailwind components;
 
-.text-primary {
-  @apply text-teal-500;
-}
-
 .bg-primary {
   @apply bg-teal-500;
 }
@@ -14,8 +10,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
 
 
 * {
@@ -37,16 +34,6 @@
   color: var(--text-secondary);
 } */
 
-
-.text-testimonial {
-  font-family: 'Asap Condensed', sans-serif;
-}
-
-.text-menu {
-  color: var(--text-whitesh);
-}
-
-
 html {
   overflow-x: hidden;
 }
@@ -66,6 +53,19 @@ a {
 .text-ubunto {
   font-family: 'Ubuntu', sans-serif;
 }
+
+.text-testimonial {
+  font-family: 'Asap Condensed', sans-serif;
+}
+
+.text-dancing {
+  font-family: 'Dancing Script', cursive;
+}
+
+.text-menu {
+  color: var(--text-whitesh);
+}
+
 
 .nav {
   transition: all 0.3s ease-in-out;

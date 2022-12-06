@@ -1,4 +1,5 @@
 import React from "react";
+import { FaRegBell } from "react-icons/fa";
 import {
   LineChart,
   Line,
@@ -9,7 +10,7 @@ import {
   Legend,
 } from "recharts";
 import { ChartData } from "../Data/LineChartData";
-const Charts = ({width,height}) => {
+const Charts = ({ width, height }) => {
 
   return (
     <>

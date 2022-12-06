@@ -2,57 +2,73 @@
   width: 750px;
   height: 300px;
 }
+
 .width {
   width: 750px;
 }
+
 .border_b {
   border-bottom: 2px solid gray;
 }
+
 .vendor_services {
   width: 250px;
   height: auto;
 }
+
 .vendor_padding {
   padding-top: 118.5px;
 }
+
 .gallery {
   height: auto;
   width: 1019px;
 }
+
 .Image_width {
   width: 210px;
   height: 280px;
 }
+
 .Image_height {
   width: 210px;
   height: 180px;
 }
+
 .page {
   width: 100vw;
   height: 100vh;
 }
+
 .left {
   flex: 1;
 }
+
 .right {
   flex: 4;
 }
+
 .cardshadow {
   box-shadow: 0px 0px 8px 0px rgb(203 203 203 / 98%);
 }
+
 .Adminshadow {
-  box-shadow: 0px 1px 15px rgba(187, 187, 187, 0.4);
+  box-shadow: 0px 0px 20px 0px rgb(220 220 220 / 98%);
 }
+
 .template {
   grid-template-columns: 12.5rem auto;
 }
-.nav-menu{
+
+.nav-menu {
   position: fixed;
   top: 0;
   left: -100%;
   width: 250px;
   height: 100%;
+  transition: all .5s ease-in-out;
 }
-.active{
-  left:0;
+
+.active {
+  left: 0;
 }

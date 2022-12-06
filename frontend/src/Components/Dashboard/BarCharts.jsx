@@ -11,8 +11,6 @@ import {
   Brush,
 } from "recharts";
 const BarCharts = ({ width, height }) => {
-  //  const { backgroundColor, strokeColor,id } = props;
-  console.log(width);
   return (
     <>
       <BarChart width={width} height={height} data={BarChartData}>
