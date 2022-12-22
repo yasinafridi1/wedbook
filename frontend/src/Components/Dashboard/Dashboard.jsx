@@ -1,20 +1,23 @@
 import React from "react";
-import BarCharts from "./BarCharts";
+import SmallTable from "../Order/SmallTable";
+// import TableHeader from "../Order/TableHeader";
 import Buttons from "./Buttons";
 import Charts from "./Charts";
+import CustomerReview from "./CustomerReview";
+import SmallCalender from "./SmallCalender";
 
 const Dashboard = () => {
   function btnCliked1(params) {
-    alert('button clicked1');
+    alert("button clicked1");
   }
   function btnCliked2(params) {
-    alert('button clicked2');
+    alert("button clicked2");
   }
   function btnCliked3(params) {
-    alert('button clicked3');
+    alert("button clicked3");
   }
   function btnCliked4(params) {
-    alert('button clicked4');
+    alert("button clicked4");
   }
   return (
     <>
@@ -25,9 +28,13 @@ const Dashboard = () => {
           <Buttons onClick={btnCliked3} name="Monthly Revenue" order="350K" />
           <Buttons onClick={btnCliked4} name="Orders Request" order="15" />
         </div>
-        <div className="py-10 flex">
-          <Charts width={410} height={300} />
-          <BarCharts width={410} height={300} />
+        <div className="py-10 px-6 flex justify-between">
+          <SmallCalender />
+          <CustomerReview />
+        </div>
+        <div className="py-4 flex justify-between">
+          <Charts width={550} height={360} />
+          <SmallTable />
         </div>
       </div>
     </>

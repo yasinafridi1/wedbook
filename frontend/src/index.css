@@ -7,28 +7,23 @@
 
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
 
 * {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
 }
 
-
-
 :root {
-  --bg-color: #F4FAFF;
+  --bg-color: #f4faff;
   --text-secondary: #707070;
   --color-pink: #db2777;
-  --text-whitesh: #F8FCFF;
+  --text-whitesh: #f8fcff;
 }
-
 
 /* .text-menu-home {
   color: var(--text-secondary);
@@ -51,21 +46,20 @@ a {
 }
 
 .text-ubunto {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .text-testimonial {
-  font-family: 'Asap Condensed', sans-serif;
+  font-family: "Asap Condensed", sans-serif;
 }
 
 .text-dancing {
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 }
 
 .text-menu {
   color: var(--text-whitesh);
 }
-
 
 .nav {
   transition: all 0.3s ease-in-out;
@@ -77,14 +71,12 @@ a {
   background: var(--bg-color);
 }
 
-
 .banner-register {
   position: absolute;
   top: 90%;
   left: 50%;
   transform: translate(-50%, -55%);
 }
-
 
 input#openSidebarMenu {
   display: none;
@@ -123,16 +115,16 @@ input#openSidebarMenu {
   transition: all 0.7s;
 }
 
-#openSidebarMenu:checked~.sidebarIconToggle>.spinner.middle {
+#openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.middle {
   opacity: 0;
 }
 
-#openSidebarMenu:checked~.sidebarIconToggle>.spinner.top {
+#openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.top {
   transform: rotate(140deg) translate(-15%, 100%);
   margin-top: 9px;
 }
 
-#openSidebarMenu:checked~.sidebarIconToggle>.spinner.bottom {
+#openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.bottom {
   transform: rotate(-140deg) translate(11%, 150%);
   margin-top: -8px;
 }

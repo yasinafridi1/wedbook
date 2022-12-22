@@ -8,13 +8,17 @@ import CustomerRoutes from "./CustomerRoutes";
 
 // import VendorPageRouting from "./pages/VendorPageRouting";
 function App() {
-  const [user, setuser] = useState('vendor');
+  const [user, setuser] = useState("customer");
 
   return (
     <>
-      {
-        user == 'admin' ? <AdminRoutes /> : user === 'vendor' ? <VendorRoutes /> : <CustomerRoutes />
-      }
+      {user == "admin" ? (
+        <AdminRoutes />
+      ) : user === "vendor" ? (
+        <VendorRoutes />
+      ) : (
+        <CustomerRoutes />
+      )}
     </>
   );
 }

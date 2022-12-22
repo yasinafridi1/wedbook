@@ -41,17 +41,17 @@ const events = [
 ];
 
 function OrderCalendar() {
-  const [newEvent, setNewEvent] = useState({ title: "", start: "", end: "" });
-  const [allEvents, setAllEvents] = useState(events);
   return (
     <>
-      <Calendar
-        localizer={localizer}
-        events={allEvents}
-        startAccessor="start"
-        endAccessor="end"
-        style={{ height: 500, margin: "50px" }}
-      />
+      <div className="w-[90%] ml-16">
+        <Calendar
+          localizer={localizer}
+          events={events}
+          startAccessor="start"
+          endAccessor="end"
+          style={{ height: 500, margin: "50px" }}
+        />
+      </div>
     </>
   );
 }

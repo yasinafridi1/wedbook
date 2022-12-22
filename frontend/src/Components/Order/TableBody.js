@@ -1,15 +1,14 @@
 import React from "react";
-const TableBody = ({data,Index}) => {
+const TableBody = ({ data, Index }) => {
   return (
     <>
-
-              <tr className='text-black'>
-                <td className="border px-4 py-2">
-                    <p className='font-semibold text-sm'>{data.OrderId}</p>
-                </td>
-                <td className="border px-4 py-2">{data.CustomerName}</td>
-                <td className="border px-4 py-2">{data.Contact}</td>
-                {/* <td className="border px-4 py-2">
+      <tr className="text-black">
+        <td className="border px-4 py-2">
+          <p className="font-semibold text-sm">{data.OrderId}</p>
+        </td>
+        <td className="border px-4 py-2">{data.CustomerName}</td>
+        <td className="border px-4 py-2">{data.Contact}</td>
+        {/* <td className="border px-4 py-2">
                     <div className="inline-block relative w-64">
                         <form>
                             <input type="hidden" name="orderId" />
@@ -33,15 +32,14 @@ const TableBody = ({data,Index}) => {
                         </div>
                     </div>
                 </td> */}
-                <td className="border px-4 py-2">{data.From}</td>
-                <td className="border px-4 py-2">{data.To}</td>
-                <td className="border px-4 py-2">{data.Price}</td>
-                <td className="border px-4 py-2">{data.Status}</td>
-                {/* <td className="border px-4 py-2">
+        <td className="border px-4 py-2">{data.From}</td>
+        <td className="border px-4 py-2">{data.To}</td>
+        <td className="border px-4 py-2">{data.Price}</td>
+        {/* <td className="border px-4 py-2">{data.Status}</td> */}
+        {/* <td className="border px-4 py-2">
                     01:45PM
                 </td> */}
-            </tr>
-         
+      </tr>
     </>
   );
 };
