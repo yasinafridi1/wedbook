@@ -4,7 +4,7 @@ const CustomerReview = () => {
   console.log(ReviewData);
   return (
     <>
-      <div className="w-[250px] h-[300px] bg-white Box">
+      <div className="w-[100%] h-[300px] Box">
         <h1 className="font-extrabold text-secular text-2xl py-2 pl-2 border-b border-gray-300">
           Recent Customers
         </h1>

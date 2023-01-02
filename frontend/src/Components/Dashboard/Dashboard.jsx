@@ -28,9 +28,14 @@ const Dashboard = () => {
           <Buttons onClick={btnCliked3} name="Monthly Revenue" order="350K" />
           <Buttons onClick={btnCliked4} name="Orders Request" order="15" />
         </div>
-        <div className="py-10 px-6 flex justify-between">
-          <SmallCalender />
-          <CustomerReview />
+        <div className="py-10 w-[100%] flex justify-between items-center  pl-2 pr-2">
+          <div className="w-[74.5%]">
+            <SmallCalender />
+          </div>
+          <div className="w-[22%]">
+            <CustomerReview />
+
+          </div>
         </div>
         <div className="py-4 flex justify-between">
           <Charts width={550} height={360} />

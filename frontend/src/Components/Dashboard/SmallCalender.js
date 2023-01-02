@@ -7,7 +7,7 @@ function SmallCalender() {
   return (
     <div className="app">
       <div className="calendar-container">
-        <Calendar onChange={setDate} value={date} />
+        <Calendar value={date} />
       </div>
     </div>
   );
