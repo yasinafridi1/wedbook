@@ -5,7 +5,7 @@ import './services.css';
 
 const Services = () => {
   return (
-    <div>
+    <div id="services">
       <section className="pt-7 px-14 flex justify-between items-center border-cyan-300">
         <div>
           <h1 className="text-3xl font-extrabold text-ubunto text-gray-500">Main Services</h1>

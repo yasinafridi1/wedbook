@@ -1,14 +1,24 @@
-import React from "react";
+import { React, useState, useEffect } from "react";
+import { Link } from 'react-router-dom';
+import { store } from "../../redux/store";
 
 const Navbar = ({ directory }) => {
+  const [auth, setAuth] = useState(false);
   window.addEventListener("scroll", () => {
     const nav = document.querySelector(".nav");
-    if (window.scrollY > 100) {
-      nav.classList.add("animateMenu");
-    } else {
-      nav.classList.remove("animateMenu");
+    if (nav) {
+      if (window.scrollY > 100) {
+        nav.classList.add("animateMenu");
+      } else {
+        nav.classList.remove("animateMenu");
+      }
     }
   });
+
+  // useEffect(() => {
+  //   setAuth(store.getState().userInfo.auth);
+  //   console.log(auth);
+  // }, [auth]);
 
   return (
     <nav className={`${directory === 'home' ? 'navHomeBg' : 'bg-primary'} nav fixed py-2 px-10 w-full flex justify-center items-center flex-col`}>
@@ -18,21 +28,36 @@ const Navbar = ({ directory }) => {
         </div>
         <ul className={`${directory === 'home' ? 'text-gray-500' : 'text-menu'} flex justify-between items-center`}>
           <li>
-            <a
-              href="/"
+            <Link
+              to="/"
               className="pl-12 xl:text-xl lg:text-lg md:text-base sm:text-xs sm:font-bold hover:text-pink-900 transition ease-in-out duration-500"
             >
               Home
-            </a>
+            </Link>
           </li>
+
           <li>
             <a
-              href="/services"
+              href="/#services"
               className="pl-12 xl:text-xl lg:text-lg md:text-base sm:text-xs sm:font-bold hover:text-pink-900 transition ease-in-out duration-500"
             >
               Services
             </a>
           </li>
+          {
+            auth ?
+              <li>
+                <Link
+                  to="/orders"
+                  className="pl-12 xl:text-xl lg:text-lg md:text-base sm:text-xs sm:font-bold hover:text-pink-900 transition ease-in-out duration-500"
+                >
+                  Orders
+                </Link>
+              </li>
+              : ''
+          }
+
+
           <li>
             <a
               href="#about"
@@ -50,20 +75,34 @@ const Navbar = ({ directory }) => {
             </a>
           </li>
         </ul>
-        <div>
-          <a
-            href="/signin"
-            className={`${directory === 'home' ? '' : 'navHomeBg'} py-1 text-primary text-md px-2 font-bold hover:text-gray-600 transition ease-in-out duration-500`}
-          >
-            Sign in
-          </a>
-          <a
-            href="/signup"
-            className="bg-primary py-1 px-2 text-white text-md font-bold hover:text-gray-600 transition ease-in-out duration-500"
-          >
-            Sign up
-          </a>
-        </div>
+
+        {
+          auth ? <div>
+            <Link
+              href="/signin"
+              className={`${directory === 'home' ? '' : 'navHomeBg'} py-1 text-secular text-primary text-md px-2 hover:text-blue-800 transition ease-in-out duration-500`}
+            >
+              Logout
+            </Link>
+          </div>
+            :
+            <div>
+              <Link
+                to="/signin"
+                className={`${directory === 'home' ? '' : 'navHomeBg'} py-1 text-primary text-md px-2 font-bold hover:text-gray-600 transition ease-in-out duration-500`}
+              >
+                Sign in
+              </Link>
+              <Link
+                to="/signup"
+                className="bg-primary py-1 px-2 text-white text-md font-bold hover:text-gray-600 transition ease-in-out duration-500"
+              >
+                Sign up
+              </Link>
+            </div>
+
+        }
+
         <input type="checkbox" id="openSidebarMenu" />
         <label
           htmlFor="openSidebarMenu"

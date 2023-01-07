@@ -13,6 +13,6 @@ const RefreshSchema = new mongoose.Schema({
 }, { timestamps: true });
 
 
-const RefreshModel = mongoose.model('refreshtoken', refreshSchema);
+const RefreshModel = mongoose.model('refreshtoken', RefreshSchema);
 
 module.exports = RefreshModel;

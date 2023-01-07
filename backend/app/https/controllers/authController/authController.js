@@ -1,11 +1,14 @@
 const Joi = require("joi");
 const bcrypt = require("bcrypt");
 const User = require("../../../models/User");
-
+const userDto = require("../../../../Services/userDto");
+const JwtService = require("../../../../Services/JwtServices");
+const RefreshModel = require("../../../models/RefreshModel");
 
 function authController() {
     return {
         login: async (req, res) => {
+            console.log(req.body);
             // validate the req
             const loginSchema = Joi.object({
                 email: Joi.string().email().required(),
@@ -49,7 +52,7 @@ function authController() {
             })
 
             const userdata = userDto(user);
-            return res.json({ userdata, accessToken });
+            return res.json({ userdata });
 
         },
         register: async (req, res) => {
@@ -57,7 +60,16 @@ function authController() {
             const registerSchema = Joi.object({
                 fullName: Joi.string().required(),
                 email: Joi.string().email().required(),
-                password: Joi.string().pattern(new RegExp('^[a-zA-Z0-9]{5,15}$')).required(),
+                password: Joi.string()
+                    .pattern(new RegExp('^[a-zA-Z0-9]{5,15}$'))
+                    .required()
+                    .min(8)
+                    .max(15)
+                    .messages({
+                        "string.pattern.base": "Password must include alphabets and numbers",
+                        "string.min": "minimum 8 character required",
+                        "string.max": "maximum 15 characters allowed"
+                    }),
                 confirmPassword: Joi.ref('password'),
                 role: Joi.string().required(),
                 address: Joi.string().required()

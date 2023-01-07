@@ -4,19 +4,18 @@ const port = process.env.PORT || 8000;
 const app = express();
 const Router = require('./web/routes');
 const mongoose = require('mongoose');
-const { urlencoded } = require("express");
 // const path = require('path');
 // const cookieParser = require('cookie-parser');
-// const cors = require('cors');
+const cors = require('cors');
 
 // global.rootDirectory = path.resolve(__dirname);
 
-// const corsOption = {
-//     origin: 'http://localhost:3000',
-//     credentials: true
-// }
+const corsOption = {
+    origin: 'http://localhost:3000',
+    credentials: true
+}
 
-// app.use(cors(corsOption));
+app.use(cors(corsOption));
 
 // app.use(cookieParser());
 

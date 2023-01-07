@@ -8,7 +8,22 @@ Front end
 [+] - Vendor Order page
 [+] - Vendor Revenue page
 [+] - Vendor feedback page
-[-] - Sign in 
-[-] - Sign Up
-[-] - Vendor Register
+
+------------------------------------------------
+Date : 6/01/2023
+[+] - Sign in 
+[+] - Sign Up
+        [+] - Backend
+            - joi
+            - bcrypt
+            -Jwt
+        [+] - Front End
+            - Login page design
+            - Register form design
+            - Create redirect routes
+            - connect with backend using axios 
+---------------------------------------------------   
+[+] - Redux setup for auth
+[-] - Venues Register
+[-] - Photograpghy Registration
 [-] - Admin Panel
