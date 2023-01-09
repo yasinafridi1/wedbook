@@ -5,6 +5,7 @@ import Navbar from "../../Components/navbar/Navbar";
 import HomeBanner from "../../Components/Banners/HomeBanner";
 import HomeHeader from "../../Components/Banners/HomeHeader";
 import MainBanner from "../../Components/Banners/MainBanner";
+
 const Home = () => {
   return (
     <>

@@ -8,7 +8,7 @@ const RefreshModel = require("../../../models/RefreshModel");
 function authController() {
     return {
         login: async (req, res) => {
-            console.log(req.body);
+
             // validate the req
             const loginSchema = Joi.object({
                 email: Joi.string().email().required(),
@@ -118,9 +118,18 @@ function authController() {
             return res.json({ message: 'All ok' });
 
         },
-        logout: (req, res) => {
-            // Remove refresh token from database
-            // remove access and refresh token from cookies
+        logout: async (req, res) => {
+            try {
+                const token = await RefreshModel.findOneAndRemove({ userId: req.user._id });
+                if (!token) {
+                    return res.status(422).json({ message: 'Token not found' });
+                }
+                res.clearCookie('accesstoken');
+                res.clearCookie('refreshtoken');
+            } catch (err) {
+                return res.status(500).json({ message: err.message });
+            }
+            return res.json({ message: 'Logout successfully' });
         }
     }
 }

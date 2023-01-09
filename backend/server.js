@@ -5,7 +5,7 @@ const app = express();
 const Router = require('./web/routes');
 const mongoose = require('mongoose');
 // const path = require('path');
-// const cookieParser = require('cookie-parser');
+const cookieParser = require('cookie-parser');
 const cors = require('cors');
 
 // global.rootDirectory = path.resolve(__dirname);
@@ -17,7 +17,7 @@ const corsOption = {
 
 app.use(cors(corsOption));
 
-// app.use(cookieParser());
+app.use(cookieParser());
 
 app.use(express.json());
 

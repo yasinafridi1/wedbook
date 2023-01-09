@@ -1,4 +1,3 @@
-Front end
 [+] - Implement home page
 [+] - Vendors list (venues list,catering list etc)
 [+] - Venues home page 
@@ -24,6 +23,12 @@ Date : 6/01/2023
             - connect with backend using axios 
 ---------------------------------------------------   
 [+] - Redux setup for auth
+[+] - register service form
+[+] - Loading page design and logic
+[+] - Error 404 page design and logic
+[+] - Modal design and logic 
+[+] - Service registration form design and logic
+[+] - Logout functionality added 
 [-] - Venues Register
 [-] - Photograpghy Registration
 [-] - Admin Panel

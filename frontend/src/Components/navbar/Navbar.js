@@ -1,9 +1,13 @@
 import { React, useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 import { store } from "../../redux/store";
+import { auth, logout } from '../../redux/action/authActions';
+import { logoutUser } from "../../https";
 
 const Navbar = ({ directory }) => {
-  const [auth, setAuth] = useState(false);
+  const [isauth, setAuth] = useState(false);
+  const dispatch = useDispatch();
   window.addEventListener("scroll", () => {
     const nav = document.querySelector(".nav");
     if (nav) {
@@ -15,10 +19,24 @@ const Navbar = ({ directory }) => {
     }
   });
 
-  // useEffect(() => {
-  //   setAuth(store.getState().userInfo.auth);
-  //   console.log(auth);
-  // }, [auth]);
+  useEffect(() => {
+    setAuth(store.getState().userInfo.auth);
+  }, []);
+
+
+
+  async function handleLogout() {
+    dispatch(auth())
+    dispatch(logout())
+    localStorage.clear();
+    try {
+      const { data } = await logoutUser();
+      setAuth(false);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
 
   return (
     <nav className={`${directory === 'home' ? 'navHomeBg' : 'bg-primary'} nav fixed py-2 px-10 w-full flex justify-center items-center flex-col`}>
@@ -45,7 +63,7 @@ const Navbar = ({ directory }) => {
             </a>
           </li>
           {
-            auth ?
+            isauth ?
               <li>
                 <Link
                   to="/orders"
@@ -77,13 +95,12 @@ const Navbar = ({ directory }) => {
         </ul>
 
         {
-          auth ? <div>
-            <Link
-              href="/signin"
+          isauth ? <div>
+            <button onClick={handleLogout}
               className={`${directory === 'home' ? '' : 'navHomeBg'} py-1 text-secular text-primary text-md px-2 hover:text-blue-800 transition ease-in-out duration-500`}
             >
               Logout
-            </Link>
+            </button>
           </div>
             :
             <div>
